@@ -3,3 +3,29 @@ body {background: #F8F9FA !important;}
 * {
     font-family: 'Nunito', sans-serif;
 }
+
+
+.speech-bubble {
+    background-color: #f8f8f8;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    //width: 500px;
+    //text-align: center;
+    padding: 20px;
+    position: absolute;
+}
+
+.speech-bubble .arrow {
+    border-style: solid;
+    position: absolute;
+}
+ 
+.bottom {
+    border-color: #c8c8c8 transparent transparent transparent;
+    //border-width: 30px 0px 10px 30px;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent; 
+	border-right:15px solid #c8c8c8; 
+	left: -19px;
+    bottom: 15px;
+}

@@ -1,97 +1,149 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e9514e98-a183-4f4f-aa32-e85b4cd65ded";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "e9514e98-a183-4f4f-aa32-e85b4cd65ded";
+    (function () {
+      d = document;
+      s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
+
+  <script>
+    function formatDate() {
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+var n = new Date();
+var y = n.getFullYear();
+var m = n.getMonth();
+var d = n.getDate();
+var hours = n.getHours();
+var minutes = n.getMinutes();
+var ampm = hours >= 12 ? 'P.M.' : 'A.M.';
+hours = hours % 12;
+hours = hours ? hours : 12; // the hour '0' should be '12'
+minutes = minutes < 10 ? '0'+minutes : minutes;
+var strTime = hours + ':' + minutes + ' ' + ampm;
+
+document.getElementById("date").innerHTML = "<small>" + d + " " + months[m] + ", " + strTime + "</small>";
+}
+
+window.onload = function() {
+  formatDate();
+};
+
+  </script>
   <title>test</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="custom.css">
-  
+
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light mb-6">
-  <a class="navbar-brand">
-    <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
-    <strong>hashtag2sms</strong>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-6">
+    <a class="navbar-brand">
+      <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+      <strong>hashtag2sms</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-    <span class="navbar-text">
-      Made with ☕ by @martinsfjoao
-    </span>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <span class="navbar-text">
+        Made with ☕ by @martinsfjoao
+      </span>
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <div class="row mb-4">
+
+      <div class='col-md-6'>
+        <h1 class="mb-4 font-weight-bold">What if...</h1>
+
+        You could follow your favorite Twitter hashtag 🌍 wherever you go?
+        <br> For only
+        <b>3.99€/month</b>, no need for an 🔌 internet connection or constant 📱 app checking.
+        <br> You'll receive 🔔 2 daily SMS digests with the most recent 🐦 tweets on that #hashtag. Simple as that 😊
+
+        <div class="row speech-bubble mx-3 mt-4 mb-3">
+          <div class="arrow bottom right"></div>
+          <p>
+          🔥 Hot on #ProductHunt: <a href="https://t.co/xob0BOXwQT">https://t.co/xob0BOXwQT</a> #ProductHunt #SocialMediaUK<br>
+          🔥 Just hit 100 Upvotes on #ProductHunt! AURA Band - Fitness tracker that knows what you're made of <a href="https://t.co/xob0BOXwQT">https://t.co/xob0BOXwQT</a><br>
+          🔥 RT @Myseatcheck: Thank you @ProductHunt and @producthuntATL for a great event at @ATLTechVillage and showcasing @Myseatcheck
+          </p>
+        </div>
+        <p class="text-center mb-0 mt-2" id="date"></p>        
+        <div class="row speech-bubble mx-3 mt-0 mb-3">
+            <div class="arrow bottom right"></div>
+            <p>
+            🔥 Hot on #ProductHunt: <a href="https://t.co/xob0BOXwQT">https://t.co/xob0BOXwQT</a> #ProductHunt #SocialMediaUK<br>
+            🔥 Just hit 100 Upvotes on #ProductHunt! AURA Band - Fitness tracker that knows what you're made of <a href="https://t.co/xob0BOXwQT">https://t.co/xob0BOXwQT</a><br>
+            🔥 RT @Myseatcheck: Thank you @ProductHunt and @producthuntATL for a great event at @ATLTechVillage and showcasing @Myseatcheck
+            </p>
+          </div>
+      </div>
+
+      <div class='col-md-6'>
+        <h1 class="mb-4 font-weight-bold">To get started, just fill this form...</h1>
+        <form action='https://docs.google.com/forms/d/e/1FAIpQLSdwSBYKgx92OrRgHDuEiDDSPyEd2wekfxwSy0vBxiYcTiSLSA/formResponse' target="no-target"
+          onSubmit="alert('Thank you, you will start receiving your digest once I verify your payment! 👌');">
+          <div class="form-group">
+            <label for="InputPhoneNumber">📞 Phone number</label>
+            <input name="entry.371217912" type="text" class="form-control" placeholder="Enter your phone number.">
+          </div>
+          <div class="form-group">
+            <label for="InputEmail">📧 Email address</label>
+            <input name="entry.1888999011" type="email" class="form-control" placeholder="Enter your PayPal email.">
+          </div>
+          <div class="form-group">
+            <label for="InputHashtag">🔖 Hashtag</label>
+            <input name="entry.1208664034" type="text" class="form-control" placeholder="The hashtag you want to follow. ex.: #twitter">
+          </div>
+          First
+          <a class="btn btn-primary" href="https://www.paypal.me/martinsfjoao/3.99eur" target="_blank">💵 Pay using PayPal</a>
+          , then
+          <button type="submit" class="btn btn-primary">Submit</button> the form.
+        </form>
+      </div>
+    </div>
+
+
+    <div class="row mt-4">
+      <div class="container-fluid col-md-8 col-md-offset-3 text-center mt-6">
+        <h2 class="mb-2 font-weight-bold">👉 Want more? Maybe you need a custom plan...</h2>
+        Use the live chat bellow or email me at
+        <a href="mailto:martinsfjoao@outlook.com">martinsfjoao@outlook.com</a>
+      </div>
+    </div>
+
   </div>
-</nav>
-<div class="container mt-3">
-<div class="row mb-4">
-
-<div class='col-md-6 mb-4'>
-<h1 class="mb-4 font-weight-bold">What if...</h1>
-
-You could follow your favorite Twitter hashtag 🌍 wherever you go?<br>
-For only <b>3.99€/month</b>, no need for an 🔌 internet connection or constant 📱 app checking.<br>
-You'll receive 🔔 2 daily SMS digests with the most recent 🐦 tweets on that #hashtag. Simple as that 😊
 
 
-<!-- <div class="row text-center">
-<img class="img-fluid" src="hashtag2sms_example.png" alt="Chania" style="min-width: 320px;">
-</div>  -->
-
-<div class="row speech-bubble mx-3 mt-3 mb-3">
-  <div class="arrow bottom right"></div>
-      <p>🔥 Hot on #ProductHunt: https://t.co/xob0BOXwQT #ProductHunt #SocialMediaUK</p>
-    <p>🔥 Just hit 100 Upvotes on #ProductHunt! AURA Band - Fitness tracker that knows what you're made of https://t.co/wUtIcVJpMn https://t.co/6H6fo200Eh</p>
-    <p>🔥 RT @Myseatcheck: Thank you @ProductHunt and @producthuntATL for a great event at @ATLTechVillage and showcasing @Myseatcheck</p>
-</div>
-</div>
-
-<div class='col-md-6'>
-<h1 class="mb-4 font-weight-bold">To get started, just fill this form...</h1>
-<form action='https://docs.google.com/forms/d/e/1FAIpQLSdwSBYKgx92OrRgHDuEiDDSPyEd2wekfxwSy0vBxiYcTiSLSA/formResponse' target="no-target"  onSubmit="alert('Thank you, you will start receiving your digest once I verify your payment! 👌');">
-    <div class="form-group">
-    <label for="InputPhoneNumber">📞 Phone number</label>
-    <input name="entry.371217912" type="text" class="form-control" placeholder="Enter your phone number.">
-  </div>
-  <div class="form-group">
-    <label for="InputEmail">📧 Email address</label>
-    <input name="entry.1888999011" type="email" class="form-control" placeholder="Enter your PayPal email.">
-  </div>
-  <div class="form-group">
-    <label for="InputHashtag">🔖 Hashtag</label>
-    <input name="entry.1208664034" type="text" class="form-control" placeholder="The hashtag you want to follow. ex.: #twitter">
-  </div>
-	First <a class="btn btn-primary" href="https://www.paypal.me/martinsfjoao/3.99eur" target="_blank">💵 Pay using PayPal</a>
-    , then <button type="submit" class="btn btn-primary">Submit</button> the form.
-</form>
-</div>
-</div>
-
-
-<div class="row">
-<div class="container-fluid col-md-8 col-md-offset-3 text-center mt-6">
-<h2 class="mb-2 font-weight-bold">👉 Want more? Maybe you need a custom plan...</h3>
-Use the live chat bellow or email me at <a href="mailto:martinsfjoao@outlook.com">martinsfjoao@outlook.com</a>
-</div>
-</div>
-</div>
-
-
-        <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+  <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
 
 </body>
-</html>
 
+</html>

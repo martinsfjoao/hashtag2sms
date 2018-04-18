@@ -51,6 +51,7 @@
       if (form.checkValidity()) {
         form.submit();
         form.reset();
+        ga('send', 'event', 'Form', 'Submit', 'New member submitted form', 3,99);
         alert('Thank you, you will start receiving your digest once I verify your payment! 👌');
       }
     }

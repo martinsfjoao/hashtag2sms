@@ -2,23 +2,18 @@
 <html>
 
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NSNR2LT');</script>
-    <!-- End Google Tag Manager -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55234534-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-55234534-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-55234534-3');
-</script>
+    gtag('config', 'UA-55234534-3');
+  </script>
 
   <script type="text/javascript">
     window.$crisp = [];
@@ -61,9 +56,10 @@
         form.reset();
         //ga('send', 'event', 'Form', 'Submit', 'New member submitted form', 3,99);
         gtag('event', 'Form', {
-  'event_category' : 'Submit',
-  'event_label' : 'New member submitted form'
-});
+          'event_action': 'Submit',
+          'event_label': 'New member submitted form',
+          'event_value': '3.99'
+        });
         alert('Thank you, you will start receiving your digest once I verify your payment! 👌');
       }
     }
@@ -88,12 +84,7 @@
 </head>
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSNR2LT"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-6" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-6">
     <a class="navbar-brand">
       <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
       <strong>hashtag2sms</strong>
